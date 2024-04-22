@@ -3,6 +3,40 @@
 <head> <!-- 본문을 설명함 -->
     <title>WEB1 - CSS</title> <!-- 웹페이지의 제목이다. (탭에 나타나는 문장) 검색엔진에서도 이를 책 표지처럼 간주한다. -->
     <meta charset="utf-8"> <!-- 한글이 깨질 때 쓰면 된다. "utf-8로 문서를 읽어라." 라는 뜻이다. -->
+    <style>
+        body {
+            margin: 0px;
+        }
+        a {
+            color:black;
+            text-decoration: none;
+        }
+        .saw {
+            color:gray;
+        }
+        #active {
+            color:red;
+        }
+        h1 {
+            font-size:45px;
+            text-align:center;
+            border-bottom: 1px solid gray;
+            margin: 0px;
+            padding: 20px;
+        }
+        ol {
+            border-right: 1px solid gray;
+            width: 100px;
+            margin: 0px;
+            padding: 20px;
+        }
+    </style>
+    <!--
+        1. class의 선택자는 .이다.
+        2. 클래스라는 속성은 여러 개를 가질 수 있으며, 구분은 띄어쓰기로 한다.
+        3. 코드의 순서에 따라서 적용된다. (중요도 : element 선택자 < class 선택자 < id 선택자 || 왜 ? id는 중복되지 않는 유일무이한 값이다. 구체적인 것을 포괄적인 것보다 우선순위를 높여놓으면, 예외에만 id를 부여하면 되기 때문에 코드를 짤 때 효율적이다.) 우선순위가 더 높은 것을 사용하는 것이 좋다. : id
+        4. id의 선택자는 #이다. 
+    -->
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JS47WK0WLX"></script>
     <script>
@@ -16,10 +50,19 @@
 <body> <!-- 본문 -->
     <h1><a href="index.html">WEB</a></h1>
     <ol>
-        <li><a href="1.html">HTML</a></li>
-        <li><a href="2.html">CSS</a></li>
+        <li><a href="1.html" class="saw">HTML</a></li>
+        <li><a href="2.html" class="saw" id="active">CSS</a></li>
         <li><a href="3.html">JavaScript</a></li>
     </ol>
+    <!-- <font> 태그는 이제는 사용하지 않는다. <a>, <h1> 같은 태그들은 정보를 알려주는 태그지만 <font>는 정보를 나타내는 것이 아닌 디자인을 위한 태그이기 때문에 다르다. 이 때문에 정보의 질이 떨어지기 시작했다. -->
+    <!--
+    <h1><a href="index.html"><font color="red">WEB</font></a></h1>
+    <ol>
+        <li><a href="1.html"><font color="red">HTML</font></a></li>
+        <li><a href="2.html"><font color="red">CSS</font></a></li>
+        <li><a href="3.html"><font color="red">JavaScript</font></a></li>
+    </ol>
+    -->
 <!-- <li>는 반드시 그룹핑을 하기 위한 부모 태그인 <ul>을 갖고 있다. <ul>도 반드시 자식 태그를 갖고 있다. -->
 <!-- <ul> : 숫자 없음 - unordered list || <ol> : 숫자 있음 - ordered list -->
 
@@ -52,6 +95,16 @@
         <!-- Live Server 실행 후 127.0.0.1:5500/2.html 입력해야 작동된다. localhost로 들어갈 경우 사이트에 입장할 수 없음. -->
         <!-- 이유는 방화벽의 문제로 보여진다. -->
     </p>
-
 </body>
 </html>
+
+<!--
+    웹페이지를 좀 더 아름답게 만들고 싶다. HTML에 디자인의 요소가 첨가된 태그를 추가한다.
+
+    1. HTML은 너무 중요하기 때문에, HTML이 정보에 전념하게 하기 위해서, HTML으로부터 디자인에 관한 것을 뺏어온 것이 CSS이다.
+    2. CSS를 통해 웹페이지를 디자인하는 것이 HTML을 통해서 디자인하는 것보다 훨씬 더 효율적이기 때문에, CSS라는 언어를 도입하게 된 것이다.
+-->
+
+<!--
+    <style> 태그 뿐만 아니라 <style> 속성을 통해서도 CSS를 사용할 수 있다. 이 경우, selector가 필요 없다.
+-->
