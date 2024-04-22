@@ -3,49 +3,7 @@
     <head>
         <title>WEB1 - CSS</title>
         <meta charset="utf-8">
-        <style>
-            body {
-                margin: 0px;
-            }
-            a {
-                color:black;
-                text-decoration: none;
-            }
-            h1 {
-                font-size:45px;
-                text-align:center;
-                border-bottom: 1px solid gray;
-                margin: 0px;
-                padding: 20px;
-            }
-            ol {
-                border-right: 1px solid gray;
-                width: 100px;
-                margin: 0px;
-                padding: 20px;
-            }
-            #grid {
-                display: grid;
-                grid-template-columns: 150px 1fr;
-            }
-            #grid ol { /* 부모가 grid인 ol만 선택 */ /* 웹사이트 다른 곳에도 ol이 들어갈 수 있는 경우의 수를 생각해야 함 */
-                padding-left: 33px;
-            }
-            #grid #article { /* id는 중복되지 않는 고유값이라 사실 이렇게 표현하지 않아도 되지만 의미 전달을 위해 이렇게도 표현할 수 있음 */
-                padding-left: 25px;
-            }
-            @media(max-width: 800px) /* screen < 800px */ {
-                #grid {
-                    display: block;
-                }
-                ol {
-                    border-right: none;
-                }
-                h1 {
-                    border-bottom: none;
-                }
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-JS47WK0WLX"></script>
         <script>

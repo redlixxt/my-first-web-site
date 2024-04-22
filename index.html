@@ -3,6 +3,7 @@
 <head> <!-- 본문을 설명함 -->
     <title>WEB1 - Welcome</title> <!-- 웹페이지의 제목이다. (탭에 나타나는 문장) 검색엔진에서도 이를 책 표지처럼 간주한다. -->
     <meta charset="utf-8"> <!-- 한글이 깨질 때 쓰면 된다. "utf-8로 문서를 읽어라." 라는 뜻이다. -->
+    <link rel="stylesheet" href="style.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JS47WK0WLX"></script>
     <script>
@@ -15,24 +16,27 @@
 </head>
 <body> <!-- 본문 -->
     <h1><a href="index.html">WEB</a></h1>
-    <ol>
-        <li><a href="1.html">HTML</a></li>
-        <li><a href="2.html">CSS</a></li>
-        <li><a href="3.html">JavaScript</a></li>
-    </ol>
-<!-- <li>는 반드시 그룹핑을 하기 위한 부모 태그인 <ul>을 갖고 있다. <ul>도 반드시 자식 태그를 갖고 있다. -->
-<!-- <ul> : 숫자 없음 - unordered list || <ol> : 숫자 있음 - ordered list -->
-
-    <h2>WEB</h2>
-    <p>
-        The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.
-    </p>
-    <p>
-        FYI, This is one of my favorite song. Enjoy watching!
-    </p>
-    <p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ay5spIdSWHs?si=gp5slOuL_fx-9qHX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </p>
+    <div id="grid">
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </ol>
+    <!-- <li>는 반드시 그룹핑을 하기 위한 부모 태그인 <ul>을 갖고 있다. <ul>도 반드시 자식 태그를 갖고 있다. -->
+    <!-- <ul> : 숫자 없음 - unordered list || <ol> : 숫자 있음 - ordered list -->
+        <div id="article">
+            <h2>WEB</h2>
+            <p>
+                The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.
+            </p>
+            <p>
+                FYI, This is one of my favorite song. Enjoy watching!
+            </p>
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ay5spIdSWHs?si=gp5slOuL_fx-9qHX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </p>
+        </div>
+    </div>
 
 <!-- <br>보다는 <p>를 더 자주 쓰는 것이 좋다. -->
 <!-- 태그의 이름만으로 정보가 부족할 때, 속성을 통해 의미를 부여한다. -->
