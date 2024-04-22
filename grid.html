@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #grid {
+            border: 5px solid pink;
+            display: grid;
+            grid-template-columns: 150px 1fr; /* px ? 고정적인 사이즈 */ /* (n)fr ? 유동적인 사이즈 */
+        }
+        div {
+            border: 5px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div> ? 아무런 의미 없이, 디자인을 위해 존재하는 무색무취 엘리먼트. (block-level) -->
+    <!-- <span> ? <div>와 똑같은 목적과 용도 엘리먼트. (inline-level) -->
+    <div id="grid"> <!-- 부모 엘리먼트 -->
+        <div>NAVIGATION</div>
+        <div>ARTICLE</div>
+    </div>
+</body>
+</html>
+
+<!--
+    https://caniuse.com/
+    : 현재 웹브라우저들이 HTML, CSS, Javascript 기술들을 얼마나 채택하고 있는지 통계를 보여주는 사이트.
+-->
