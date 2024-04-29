@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html> <!-- HTML의 기본 구조 : <html><head><body> -->
-<head> <!-- 본문을 설명함 -->
-    <title>WEB1 - JavaScript</title> <!-- 웹페이지의 제목이다. (탭에 나타나는 문장) 검색엔진에서도 이를 책 표지처럼 간주한다. -->
-    <meta charset="utf-8"> <!-- 한글이 깨질 때 쓰면 된다. "utf-8로 문서를 읽어라." 라는 뜻이다. -->
+<html>
+<head>
+    <title>WEB1 - JavaScript</title>
+    <meta charset="utf-8">
     <!-- Google tag (gtag.js) -->
     <link rel="stylesheet" href="style.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JS47WK0WLX"></script>
@@ -16,6 +16,14 @@
 </head>
 <body> <!-- 본문 -->
     <h1><a href="index.html">WEB</a></h1>
+    <input type="button" value ="Day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+    ">
+    <input type="button" value ="Night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+    ">
     <div id="grid">
         <ol>
             <li><a href="1.html">HTML</a></li>
@@ -27,32 +35,12 @@
         <div id="article">
             <h2>JavaScript</h2>
             <p>
-                JavaScript, often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language.
-            </p>
-            <p>
-                You can see the Chat Service under the right side. Enjoy!
-            </p>
-            <p>
-                <!--Start of Tawk.to Script-->
-                <script type="text/javascript">
-                    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-                    (function(){
-                    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-                    s1.async=true;
-                    s1.src='https://embed.tawk.to/66232a61a0c6737bd12e675b/1hrslr3el';
-                    s1.charset='UTF-8';
-                    s1.setAttribute('crossorigin','*');
-                    s0.parentNode.insertBefore(s1,s0);
-                    })();
-                </script>
-                <!--End of Tawk.to Script-->
+                JavaScript, often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in JavaScript engine. Each of the many JavaScript engines represent a different implementation of JavaScript, all based on the ECMAScript spectification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA.
             </p>
             <p>
                 You can check your numbers about visitors in Google Analytics 4.
             </p>
         </div>
     </div>
-<!-- <br>보다는 <p>를 더 자주 쓰는 것이 좋다. -->
-<!-- 태그의 이름만으로 정보가 부족할 때, 속성을 통해 의미를 부여한다. -->
 </body>
 </html>
