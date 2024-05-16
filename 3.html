@@ -13,39 +13,42 @@
 
         gtag('config', 'G-JS47WK0WLX');
     </script>
+    <script>
+        function nightDayHandler(self) {
+            var target = document.querySelector('body');
+            if (self.value === 'Night') {
+                target.style.backgroundColor = 'black';
+                target.style.color = 'white';
+                self.value = 'Day';
+
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while (i < alist.length) {
+                    console.log(alist[i]);
+                    alist[i].style.color = 'powderblue';
+                    i++;
+                }
+            }
+            else {
+                target.style.backgroundColor = 'white';
+                target.style.color = 'black';
+                self.value = 'Night';
+
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while (i < alist.length) {
+                    console.log(alist[i]);
+                    alist[i].style.color = 'blue';
+                    i++;
+                }
+            }
+        }
+    </script>
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>
     <!-- 토글 만들기 -->
-    <input type="button" value="Night" onclick="
-        var target = document.querySelector('body');
-        if (this.value === 'Night') {
-            target.style.backgroundColor = 'black';
-            target.style.color = 'white';
-            this.value = 'Day';
-
-            var alist = document.querySelectorAll('a');
-            var i = 0;
-            while (i < alist.length) {
-                console.log(alist[i]);
-                alist[i].style.color = 'powderblue';
-                i++;
-            }
-        }
-        else {
-            target.style.backgroundColor = 'white';
-            target.style.color = 'black';
-            this.value = 'Night';
-
-            var alist = document.querySelectorAll('a');
-            var i = 0;
-            while (i < alist.length) {
-                console.log(alist[i]);
-                alist[i].style.color = 'blue';
-                i++;
-            }
-        }
-    ">
+    <input type="button" value="Night" onclick="nightDayHandler(this);">
     <div id="grid">
         <ol>
             <li><a href="1.html">HTML</a></li>
